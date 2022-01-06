@@ -1,0 +1,559 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cantata Cake and Coffee">
+    <meta name="keywords" content="Cake, Coffee, J.Bach, Cantata">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block title %}
+    <title>Cantata Cake and Coffee</title>
+    {% endblock %}
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+{% block cssblock %}
+<link rel="icon" href="{% static 'img/cantata.png' %}" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/barfiller.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+{% endblock %}
+{% block content %}
+
+
+<!-- Page Preloder -->
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+
+<!-- Offcanvas Menu Begin -->
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+    <div class="offcanvas__cart">
+        <div class="offcanvas__cart__links">
+            <a href="#" class="search-switch"><img src="{% static 'img/icon/search.png' %}" alt=""></a>
+            <a href="#"><img src="{% static 'img/icon/heart.png' %}" alt=""></a>
+        </div>
+    </div>
+    <div class="offcanvas__logo">
+        <a href="./index.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
+    </div>
+    <div id="mobile-menu-wrap"></div>
+    <div class="offcanvas__option">
+        <ul>
+            <li>USD <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
+            </li>
+            <li>EN <span class="arrow_carrot-down"></span>
+                <ul>
+                    <a href="./index.html">
+                        <li>VN</li>
+                    </a>
+                    <li>EN</li>
+                </ul>
+            </li>
+            <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
+        </ul>
+    </div>
+</div>
+<!-- Offcanvas Menu End -->
+
+<!-- Header Section Begin -->
+
+<!-- Header Section End -->
+
+<!-- Hero Section Begin -->
+<section class="hero">
+    <div class="hero__slider owl-carousel">
+        <div class="hero__item set-bg" data-setbg="{% static 'img/hero/hero-1.jpg'%}">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__item set-bg" data-setbg="{% static 'img/hero/hero-2.jpg'%}">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+
+<!-- About Section Begin -->
+<section class="about spad">
+    <div class="container">
+        <div class="">
+            <div class="about__text">
+                <div class="section-title">
+                    <span>About Cantata Coffee</span>
+                    <h2>What we believe in</h2>
+                </div>
+                <p>The "<b><i>Cantata Coffee</i></b> " was inspired by Coffee Cantata - BWV 211 by the great composer
+                    Johann Sebastian Bach. We believe in love, youth, enthusiasm and standards. Because over time,
+                    everything will disappear, only the true value will stand the test of time. Like J.Bach's music.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
+
+<!-- Categories Section Begin -->
+<div class="categories">
+    <div class="container">
+        <div class="row">
+            <div class="categories__slider owl-carousel">
+
+                <div class="categories__item">
+                    <div class="categories__item__icon">
+                        <span><img src="{% static 'img/categories/coffee_bean.jpg' %}" alt="coffee_bean"></span>
+                        <h5>Coffee Bean</h5>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="categories__item__icon">
+                        <span><img src="{% static 'img/categories/cup.jpg' %}" alt="Coffee"></span>
+                        <h5>Coffee</h5>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="categories__item__icon">
+                        <span><img src="{% static 'img/categories/bread.jpg' %}" alt="bread"></span>
+                        <h5>Bread</h5>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="categories__item__icon">
+                        <span><img src="{% static 'img/categories/pastries.jpg' %}" alt="Cake"></span>
+                        <h5>Cake</h5>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="categories__item__icon">
+                        <span><img src="{% static 'img/categories/croissant.jpg' %}" alt="Pastries"
+                                   style="width: 75px;height: 75px"></span>
+                        <h5>Pastries</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Categories Section End -->
+
+<!-- Product Section Begin -->
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'img/shop/product-1.jpg' %}">
+                        <div class="product__label">
+                            <span>Bread</span>
+                        </div>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Brioche</a></h6>
+                        <div class="product__item__price">$32.00</div>
+                        <div class="cart_add">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'img/shop/product-2.jpg'%}">
+                        <div class="product__label">
+                            <span>Bread</span>
+                        </div>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Pavaroti</a></h6>
+                        <div class="product__item__price">$30.00</div>
+                        <div class="cart_add">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'img/shop/product-3.jpg'%}">
+                        <div class="product__label">
+                            <span>Bread</span>
+                        </div>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Gluten Free Mini Dozen</a></h6>
+                        <div class="product__item__price">$31.00</div>
+                        <div class="cart_add">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'img/shop/product-4.jpg'%}">
+                        <div class="product__label">
+                            <span>Bread</span>
+                        </div>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Cookie Dough</a></h6>
+                        <div class="product__item__price">$25.00</div>
+                        <div class="cart_add">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'img/shop/product-5.jpg'%}">
+                        <div class="product__label">
+                            <span>Coffee</span>
+                        </div>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Black Coffee</a></h6>
+                        <div class="product__item__price">$05.00</div>
+                        <div class="cart_add">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'img/shop/product-6.jpg'%}">
+                        <div class="product__label">
+                            <span>Coffee</span>
+                        </div>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Brown Coffee</a></h6>
+                        <div class="product__item__price">$14.00</div>
+                        <div class="cart_add">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'img/shop/product-7.jpg'%}">
+                        <div class="product__label">
+                            <span>Coffee</span>
+                        </div>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Cold Brew</a></h6>
+                        <div class="product__item__price">$32.00</div>
+                        <div class="cart_add">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="{% static 'img/shop/product-8.jpg'%}">
+                        <div class="product__label">
+                            <span>Coffee</span>
+                        </div>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">V60 Coffee</a></h6>
+                        <div class="product__item__price">$08.00</div>
+                        <div class="cart_add">
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Product Section End -->
+
+<!-- Class Section Begin -->
+<section class="class spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="class__form">
+                    <div class="section-title">
+                        <span></span>
+                        <h2>About the product</h2>
+                        <h5 style="text-align: justify;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h5>
+                    </div>
+                    <div>
+                        <table>
+                            <tr style=" font-family: 'Roboto'">
+                                <th style="padding-right: 50px; padding-bottom: 25px;">
+                                    <img src="{% static 'img/product/Coffee_bean.png'%}">
+                                </th>
+                                <th style="padding-right: 50px; padding-bottom: 25px;">
+                                    <span style="font-size: 20px; color: #5D453F; font-style: italic;">100% Coffee(nghĩ cái title gì hay ho)</span>
+                                    <h5>Fine Robusta, Honey Robusta,.... viết hay vào....</h5>
+                                </th>
+                            </tr>
+                            <tr style=" font-family: 'Roboto'">
+                                <th style="padding-right: 50px; padding-bottom: 25px;">
+                                    <img src="{% static 'img/product/pastries.png'%}">
+                                </th>
+                                <th style="padding-right: 50px; padding-bottom: 25px;">
+                                    <span style="font-size: 20px; color: #5D453F; font-style: italic;">100% Coffee(nghĩ cái title gì hay ho)</span>
+                                    <h5>Fine Robusta, Honey Robusta,.... viết hay vào....</h5>
+                                </th>
+                            </tr>
+                            </tr>
+                            <tr style=" font-family: 'Roboto'">
+                                <th style="padding-right: 50px; padding-bottom: 20px;">
+                                    <img src="{% static 'img/product/delivery.png'%}">
+                                </th>
+                                <th style="padding-right: 50px; padding-bottom: 20px;">
+                                    <span style="font-size: 20px; color: #5D453F; font-style: italic;">100% Coffee(nghĩ cái title gì hay ho)</span>
+                                    <h5>Fine Robusta, Honey Robusta,.... viết hay vào....</h5>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <a href="https://shopee.vn/shop/55494347/" target="_blank">
+                            <button type="submit" class="site-btn">Shop now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="class__video set-bg" data-setbg="{% static 'img/Cake-product.png'%}">
+        </div>
+    </div>
+</section>
+<!-- Class Section End -->
+
+<!-- Team Section Begin -->
+<section class="team spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-7">
+                <div class="section-title">
+                    <h2>Our team</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team__item set-bg" data-setbg="{% static 'img/team/team-1.jpg' %}">
+                    <div class="team__item__text">
+                        <h6>Ngoc Anh La</h6>
+                        <span>Baker</span>
+                        <div class="team__item__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team__item set-bg" data-setbg="{% static 'img/team/team-2.jpg'%}">
+                    <div class="team__item__text">
+                        <h6>Hung Trinh</h6>
+                        <span>Barista</span>
+                        <div class="team__item__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team__item set-bg" data-setbg="{% static 'img/team/team-3.jpg' %}">
+                    <div class="team__item__text">
+                        <h6>Toan Nguyen</h6>
+                        <span>Color Maker</span>
+                        <div class="team__item__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team__item set-bg" data-setbg="{% static 'img/team/team-4.jpg'%}">
+                    <div class="team__item__text">
+                        <h6>Hiep Le Tuan</h6>
+                        <span>Financial Advisor</span>
+                        <div class="team__item__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Team Section End -->
+
+<!-- Instagram Section Begin -->
+<section class="instagram spad" style="background-color: #E7DDB6;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 p-0">
+                <div class="instagram__text">
+                    <div class="section-title">
+                        <h2>Follow us</h2>
+                    </div>
+                    <div id="followus">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/cantatacakecoffee" target="_blank">
+                                    <img src="{% static 'img/icon/icon_fb.jpg'%}" style="width: 50px;height: 50px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cantatacoffee_/" target="_blank">
+                                    <img src="{% static 'img/icon/icon_ins.jpg' %}" style="width: 50px;height: 50px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/cantatacakecoffee" target="_blank">
+                                    <img src="{% static 'img/icon/icon_tiktok.jpg' %}"
+                                         style="width: 50px;height: 50px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCtPIrX2a2A09hfmJ4hoEZzA" target="_blank">
+                                    <img src="{% static 'img/icon/icon_youtube.jpg' %}"
+                                         style="width: 50px;height: 50px;">
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="Sweet">
+                            Sweet moments are saved as memories.
+                        </div>
+                    </div>
+                    <!--<a href="https://www.facebook.com/cantatacakecoffee" target="_blank">
+                        <h5><i class="fa fa-facebook" ></i>Cantata Cake & Coffee</h5>
+                    </a>
+                    <a href="https://www.instagram.com/cantatacoffee_/" target="_blank">
+                        <h5><i class="fa fa-instagram" ></i>cantatacoffee_</h5>
+                    </a> -->
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                        <div class="instagram__pic">
+                            <img src="{% static 'img/instagram/instagram-1.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                        <div class="instagram__pic middle__pic">
+                            <img src="{% static 'img/instagram/instagram-2.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                        <div class="instagram__pic">
+                            <img src="{% static 'img/instagram/instagram-3.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                        <div class="instagram__pic">
+                            <img src="{% static 'img/instagram/instagram-4.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                        <div class="instagram__pic middle__pic">
+                            <img src="{% static 'img/instagram/instagram-5.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                        <div class="instagram__pic">
+                            <img src="{% static 'img/instagram/instagram-6.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Instagram Section End -->
+
+<!-- Map Begin -->
+<div class="map">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-7">
+                <div class="map__inner">
+                    <h6>Hanoi</h6>
+                    <ul>
+                        <li>145/337,Dinh Cong Street, Hanoi, Vietnam</li>
+                        <li>Cantatacoffee247@gmail.com</li>
+                        <li>+84 98686 7613</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map__iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.391784183889!2d105.83145429098968!3d20.976926695053407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac59a7a126d9%3A0x22275675f4667bb8!2zMTQ1IE5nw7UgMzM3IMSQ4buLbmggQ8O0bmcsIMSQ4buLbmggQ8O0bmcsIEhvw6BuZyBNYWksIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1637853042539!5m2!1svi!2s"
+                height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
+<!-- Map End -->
+
+<!-- Footer Section Begin -->
+
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+
+<!-- Search End -->
+{% endblock %}
+<!-- Js Plugins -->
+{% block jsblock %}
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'js/jquery.barfiller.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}
+    <title>Cantata Cake and Coffee</title>
+    {% endblock %}
+
+    <!-- Google Font -->
+
+
+    <!-- Css Styles -->
+
+    {% block cssblock %}
+    {% endblock %}
+
+</head>
+
+<body>
+{% include 'layouts/navbar.html' %}
+
+{% block content %}
+
+{% endblock %}
+
+{% include 'layouts/footer.html' %}
+{% block jsblock %}
+{% endblock %}
+</body>
+</html>
