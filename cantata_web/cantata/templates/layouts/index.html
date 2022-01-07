@@ -32,6 +32,99 @@
 {% endblock %}
 {% block content %}
 
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+<div class="offcanvas-menu-overlay"></div>
+<div class="offcanvas-menu-wrapper">
+    <div class="offcanvas__cart">
+        <div class="offcanvas__cart__links">
+            <a href="#" class="search-switch"><img src="{% static 'img/icon/search.png' %}" alt=""></a>
+            <a href="#"><img src="{% static 'img/icon/heart.png' %}" alt=""></a>
+        </div>
+    </div>
+    <div class="offcanvas__logo">
+        <a href="./index.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
+    </div>
+    <div id="mobile-menu-wrap"></div>
+    <div class="offcanvas__option">
+        <ul>
+            <li>USD <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
+            </li>
+            <li>EN <span class="arrow_carrot-down"></span>
+                <ul>
+                    <a href="./index.html">
+                        <li>VN</li>
+                    </a>
+                    <li>EN</li>
+                </ul>
+            </li>
+            <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
+        </ul>
+    </div>
+</div>
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header__top__inner">
+                        <div class="header__top__left">
+                            <ul>
+                                <li>USD<span class="arrow_carrot-down"></span>
+                                    <ul>
+                                        <li>VND</li>
+                                        <li>USD</li>
+                                    </ul>
+                                </li>
+                                <li>EN<span class="arrow_carrot-down"></span>
+                                    <ul>
+                                        <a href="./index-VI.html">
+                                            <li>VN</li>
+                                        </a>
+                                        <li>EN</li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
+                            </ul>
+                        </div>
+                        <div class="header__logo">
+                            <a href="./index.html"><img src="{% static 'img/logo.png' %}" alt="Cantata logo"></a>
+                        </div>
+                        <div class="header__top__right">
+                            <div class="header__top__right__links">
+                                <a href="#" class="search-switch"><img src="{% static 'img/icon/search.png'%}"
+                                                                       alt=""></a>
+                                <a href="#"><img src="{% static 'img/icon/heart.png'%}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="header__menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="{% url 'cantata_web:index' %}">Home</a></li>
+                        <li><a href="{% url 'cantata_web:about' %}">About</a></li>
+                        <li><a href="{% url 'cantata_web:menu' %}">Menu</a></li>
+                        <li><a href="{% url 'cantata_web:blog' %}">Blog</a></li>
+                        <li><a href="{% url 'cantata_web:contact' %}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
 
 <!-- Page Preloder -->
 <div id="preloader">

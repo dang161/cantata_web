@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cantata Cake and Coffee">
+    <meta name="keywords" content="Cake, Coffee, J.Bach, Cantata">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block title %}
+    <title>Cantata Cake and Coffee</title>
+    {% endblock %}
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+{% block cssblock %}
+<link rel="icon" href="{% static 'img/cantata.png' %}" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/barfiller.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+{% endblock %}
+   {% block content %}
+<div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__cart">
+            <div class="offcanvas__cart__links">
+                <a href="#" class="search-switch"><img src="{% static 'img/icon/search.png' %}" alt=""></a>
+                <a href="#"><img src="img/icon/heart.png" alt=""></a>
+            </div>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__option">
+            <ul>
+                <li>USD <span class="arrow_carrot-down"></span>
+                    <ul>
+                        <li>VND</li>
+                        <li>USD</li>
+                    </ul>
+                </li>
+                <li>EN <span class="arrow_carrot-down"></span>
+                    <ul>
+                        <li>VN</li>
+                        <li>EN</li>
+                    </ul>
+                </li>
+                <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header__top__inner">
+                            <div class="header__top__left">
+                                <ul>
+                                    <li>USD <span class="arrow_carrot-down"></span>
+                                        <ul>
+                                            <li>VND</li>
+                                            <li>USD</li>
+                                        </ul>
+                                    </li>
+                                    <li>EN <span class="arrow_carrot-down"></span>
+                                        <ul>
+                                            <li>VN</li>
+                                            <li>EN</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
+                                </ul>
+                            </div>
+                            <div class="header__logo">
+                                <a href="./index.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                            </div>
+                            <div class="header__top__right">
+                                <div class="header__top__right__links">
+                                    <a href="#" class="search-switch"><img src="{% static 'img/icon/search.png' %}" alt=""></a>
+                                    <a href="#"><img src="{% static 'img/icon/heart.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas__open"><i class="fa fa-bars"></i></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="{% url 'cantata_web:index' %}">Home</a></li>
+                            <li><a href="{% url 'cantata_web:about' %}">About</a></li>
+                            <li><a href="{% url 'cantata_web:menu' %}">Shop</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./wisslist.html">Wisslist</a></li>
+                                    <li><a href="./Class.html">Class</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="{% url 'cantata_web:blog' %}">Blog</a></li>
+                            <li><a href="{% url 'cantata_web:contact' %}">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="breadcrumb__text">
+                        <h2>Blog</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html">Home</a>
+                        <span>Blog</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Blog Section Begin -->
+    <section class="blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog__item">
+                        <div class="blog__item__pic set-bg" data-setbg="{% static 'img/blog/blog-1.jpg' %}">
+                            <div class="blog__pic__inner">
+                                <div class="label">Recipes</div>
+                                <ul>
+                                    <li>By <span>James Myers</span></li>
+                                    <li>13 Nov 2020</li>
+                                    <li>112 Views</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blog__item__text">
+                            <h2>Delivering Kisses And Miracles</h2>
+                            <p>Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like
+                                a gourmet delight. By using herbs in your cooking you can easily change the flavors of
+                            your recipes in many different ways, according to which herbs you add...</p>
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="shop__pagination">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#"><span class="arrow_carrot-right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog__sidebar">
+                        <div class="blog__sidebar__search">
+                            <form action="#">
+                                <input type="text" placeholder="Enter keyword">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <h5>Follow me</h5>
+                            <div class="blog__sidebar__social">
+                                <a href="https://www.facebook.com/cantatacakecoffee"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.youtube.com/channel/UCtPIrX2a2A09hfmJ4hoEZzA"><i class="fa fa-youtube-play"></i></a>
+                                <a href="https://www.instagram.com/cantatacoffee_/"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <h5>Popular posts</h5>
+                            <div class="blog__sidebar__recent">
+                                <a href="#" class="blog__sidebar__recent__item">
+                                    <div class="blog__sidebar__recent__item__pic">
+                                        <img src="{% static 'img/blog/br-1.jpg' %}" alt="">
+                                    </div>
+                                    <div class="blog__sidebar__recent__item__text">
+                                        <h4>Secret To Cooking Vegetables</h4>
+                                        <span>13 Nov 2020</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <h5>Categories</h5>
+                            <div class="blog__sidebar__item__categories">
+                                <ul>
+                                    <li><a href="#">Repice <span>36</span></a></li>
+                                    <li><a href="#">Guides <span>18</span></a></li>
+                                    <li><a href="#">News <span>09</span></a></li>
+                                    <li><a href="#">Videos <span>12</span></a></li>
+                                    <li><a href="#">Trending <span>27</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+<!-- Search End -->
+    {% endblock %}
+{% block jsblock %}
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'js/jquery.barfiller.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.slicknav.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

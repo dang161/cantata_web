@@ -158,8 +158,8 @@ ol {
   font-weight: 600;
   text-transform: uppercase;
   padding: 14px 30px;
-  color: #ffffff;
-  background: #f08632;
+  color: #5D453F;
+  background: #5D453F;
   letter-spacing: 2px;
 }
 
@@ -703,7 +703,7 @@ ol {
   Class
 -----------------------*/
 .class {
-  background: rgba(231, 221, 182, 1);
+  background: #E7DDB6;
   position: relative;
   padding-bottom: 0;
 }
@@ -1211,6 +1211,7 @@ ol {
 .footer__newslatter {
   padding-left: 50px;
   margin-bottom: 30px;
+
 }
 .footer__newslatter h6 {
   color: #ffffff;
@@ -1317,7 +1318,7 @@ ol {
 
 .breadcrumb__text h2 {
   font-size: 50px;
-  color: #000000;
+  color: #5D453F;
   font-weight: 700;
   font-style: italic;
   font-family: "Playfair Display", serif;
@@ -1864,9 +1865,9 @@ ol {
   text-align: right;
 }
 .continue__btn.update__btn a {
-  color: #ffffff;
-  background: #111111;
-  border-color: #111111;
+  color: #E7DDB6;
+  background: #5D453F;
+  border-color: #42211A;
 }
 .continue__btn.update__btn a i {
   margin-right: 5px;
@@ -1960,9 +1961,9 @@ ol {
 }
 .cart__total .primary-btn {
   display: block;
-  background: #111111;
-  color: #ffffff;
-  padding: 12px 10px;
+  background: #5D453F;
+  color: #E7DDB6;
+  padding: 15px 10px;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -4048,7 +4049,7 @@ ol {
   }
 }
 
-
+-------------------------------------------------------
 
 /*Follow us */
 #followus{
@@ -4061,15 +4062,20 @@ ol {
 #followus ul li {
   float: left;
 }
+#followus img{
+  width: 50px;
+  height: 50px;
+}
 
 #Sweet{
   color: #5D453F;
-  font-weight: bold;
+  font-weight: 550;
   font-family: Roboto;
   font-style: italic;
-  font-size: 46px;
+  font-size: 48px;
   float: left;
-  margin-top: 30px;
+  padding-top: 10px;
+  width: 100%;
 }
 
 
@@ -4078,6 +4084,8 @@ ol {
 #footericon{
   margin: 0px auto;
   padding-left: 55px;
+  padding-bottom: 40px;
+
 
 }
 #footericon ul {
@@ -4089,4 +4097,26 @@ ol {
 }
 #footericon ul li a{
   padding: 5px ;
+}
+
+#footericon img{
+  width: 50px;
+}
+
+
+#table1{
+  font-family: Roboto;
+
+}
+#table1 table tr th{
+  padding-right: 50px;
+  padding-bottom: 25px;
+}
+#table1 table tr th span{
+  font-size: 20px;
+  font-style: italic;
+  color: #5D453F;
+}
+#table1 img{
+  width: 50px;
 }
